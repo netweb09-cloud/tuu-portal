@@ -123,140 +123,181 @@
         .search-box-container {
             display: flex;
             align-items: center;
-    }
+        }
 
-    .search-box {
-        position: relative;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        transition: all 0.4s ease;
-    }
+        .search-box {
+            position: relative;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            transition: all 0.4s ease;
+        }
 
-    .search-input {
-        width: 0; /* Mặc định ẩn ô nhập */
-        height: 100%;
-        border: none;
-        outline: none;
-        background: #f1f1f1;
-        border-radius: 20px;
-        padding: 0;
-        transition: all 0.4s ease;
-        font-size: 0.9rem;
-        opacity: 0;
-    }
+        .search-input {
+            width: 0; /* Mặc định ẩn ô nhập */
+            height: 100%;
+            border: none;
+            outline: none;
+            background: #f1f1f1;
+            border-radius: 20px;
+            padding: 0;
+            transition: all 0.4s ease;
+            font-size: 0.9rem;
+            opacity: 0;
+        }
 
-    .search-btn {
-        background: none;
-        border: none;
-        color: var(--primary-u); /* Màu xanh Navy của bạn */
-        font-size: 1.2rem;
-        cursor: pointer;
-        padding: 5px 10px;
-        transition: all 0.3s ease;
-    }
+        .search-btn {
+            background: none;
+            border: none;
+            color: var(--primary-u); /* Màu xanh Navy của bạn */
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+        }
 
-    /* Khi active: Ô nhập dài ra và hiện lên */
-    .search-box.active {
-        background: #f1f1f1;
-        border-radius: 20px;
-        padding-left: 15px;
-    }
+        /* Khi active: Ô nhập dài ra và hiện lên */
+        .search-box.active {
+            background: #f1f1f1;
+            border-radius: 20px;
+            padding-left: 15px;
+        }
 
-    .search-box.active .search-input {
-        width: 200px; /* Độ dài khi mở ra */
-        padding: 0 10px;
-        opacity: 1;
-    }
+        .search-box.active .search-input {
+            width: 200px; /* Độ dài khi mở ra */
+            padding: 0 10px;
+            opacity: 1;
+        }
 
-    .search-box.active .search-btn {
-        color: #333;
-    }
+        .search-box.active .search-btn {
+            color: #333;
+        }
 
-    .category-section {
-        background: #fff;
-        padding: 10px;
-    }
+        .category-section {
+            background: #fff;
+            padding: 10px;
+        }
 
-    .card-hover {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-    .card-hover:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-    }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+        }
 
-    .card-title a:hover {
-        color: var(--primary-u) !important;
-    }
+        .card-title a:hover {
+            color: var(--primary-u) !important;
+        }
 
-    /* Hiệu ứng gạch chân tiêu đề Category */
-    .category-section h3 {
-        position: relative;
-    }
+        /* Hiệu ứng gạch chân tiêu đề Category */
+        .category-section h3 {
+            position: relative;
+        }
 
-    .breadcrumb {
-        background-color: #f8f9fa;
-        border: 1px solid #e9ecef;
-    }
+        .breadcrumb {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+        }
 
-    .breadcrumb-item + .breadcrumb-item::before {
-        content: "\F285"; /* Icon chevron của Bootstrap Icons */
-        font-family: "bootstrap-icons";
-        font-size: 0.7rem;
-        color: #adb5bd;
-    }
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: "\F285"; /* Icon chevron của Bootstrap Icons */
+            font-family: "bootstrap-icons";
+            font-size: 0.7rem;
+            color: #adb5bd;
+        }
 
-    .text-navy {
-        color: #001f3f;
-    }
+        .text-navy {
+            color: #001f3f;
+        }
 
-    .post-content img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        margin: 20px 0;
-    }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
 
-    .post-content table {
-        width: 100% !important;
-        border-collapse: collapse;
-        margin-bottom: 1.5rem;
-    }
-    #top-banner {
-        background-color: #ffffff;
-        z-index: 1020;
-    }
+        .post-content table {
+            width: 100% !important;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+        }
+        #top-banner {
+            background-color: #ffffff;
+            z-index: 1020;
+        }
 
-    /* Đảm bảo navbar luôn nằm trên cùng */
-    .sticky-top {
-        top: 0;
-    }
+        /* Đảm bảo navbar luôn nằm trên cùng */
+        .sticky-top {
+            top: 0;
+        }
 
-    /* Loại bỏ gạch chân khi di chuột vào hotline */
-    .banner-right a:hover {
-        color: #b30000 !important; /* Đỏ đậm hơn một chút khi hover */
-    }
-    /* Sidebar cố định khi cuộn trong phạm vi cột của nó */
-    .sticky-sidebar {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 100px; /* Cách Menu một khoảng để không bị đè */
-    }
+        /* Loại bỏ gạch chân khi di chuột vào hotline */
+        .banner-right a:hover {
+            color: #b30000 !important; /* Đỏ đậm hơn một chút khi hover */
+        }
+        /* Sidebar cố định khi cuộn trong phạm vi cột của nó */
+        .sticky-sidebar {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 100px; /* Cách Menu một khoảng để không bị đè */
+        }
 
-    /* Sửa lại Sidebar Link Item cho đẹp */
-    .sidebar-link-item {
-        font-size: 0.95rem;
-        transition: all 0.2s;
-        border-left: 3px solid transparent !important;
-    }
+        /* Sửa lại Sidebar Link Item cho đẹp */
+        .sidebar-link-item {
+            font-size: 0.95rem;
+            transition: all 0.2s;
+            border-left: 3px solid transparent !important;
+        }
 
-    .sidebar-link-item:hover {
-        border-left: 3px solid #001f3f !important;
-        background-color: #f0f4f8;
-        padding-left: 20px;
-    }
+        .sidebar-link-item:hover {
+            border-left: 3px solid #001f3f !important;
+            background-color: #f0f4f8;
+            padding-left: 20px;
+        }
+        /* Container Search */
+        .search-box-container {
+            position: relative;
+        }
+
+        /* Hiệu ứng ô Search mở rộng */
+        .search-overlay {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            padding: 5px 10px;
+            border-radius: 20px;
+            width: 250px; /* Độ rộng ô tìm kiếm */
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 1050;
+            animation: fadeInRight 0.3s ease;
+        }
+
+        /* Hiệu ứng hoạt ảnh */
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateY(-50%) translateX(20px); }
+            to { opacity: 1; transform: translateY(-50%) translateX(0); }
+        }
+
+        .text-navy { color: #001f3f; }
+
+        /* Tùy chỉnh trên Mobile */
+        @media (max-width: 991.98px) {
+            .search-overlay {
+                position: fixed;
+                top: 60px; /* Nằm ngay dưới Menu */
+                left: 10px;
+                right: 10px;
+                width: calc(100% - 20px);
+                border-radius: 5px;
+            }
+        }
     
 </style>
 </head>
@@ -304,7 +345,8 @@
                                 </button>
                             </div>
                         </div>
-                        <li class="nav-item"><a class="nav-link" href="http://tuu-portal.test/"><span class="fw-bold">TRANG CHỦ</span></a></li>                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://tuu-portal.test/"><span class="fw-bold">TRANG CHỦ</span></a></li>                    
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mb-2 mobile-grid" >
                             @foreach($categories->where('parent_id', null) as $parent)
                                 @if($parent->children->count() > 0)
@@ -466,6 +508,30 @@
             banner.style.opacity = "1";
         }
     });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleBtn = document.getElementById('toggleSearch');
+    const closeBtn = document.getElementById('closeSearch');
+    const overlay = document.getElementById('searchOverlay');
+
+    // Mở ô tìm kiếm
+    toggleBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        overlay.classList.remove('d-none');
+        overlay.querySelector('input').focus();
+    });
+
+    // Đóng ô tìm kiếm
+    closeBtn.addEventListener('click', function() {
+        overlay.classList.add('d-none');
+    });
+
+    // Đóng khi nhấn Esc
+    document.addEventListener('keydown', function(e) {
+        if (e.key === "Escape") overlay.classList.add('d-none');
+    });
+});
 </script>
 </body>
 </html>
